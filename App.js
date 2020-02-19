@@ -17,11 +17,8 @@ app.get('/getLinkedinUser', function(req,res){
 };
 request(options, function (error, response) { 
   if (error) throw new Error(error);
-  console.log(response.body);
   res.send(response.body);
 });
-
-
 });
 
 app.listen(3001, function () {
