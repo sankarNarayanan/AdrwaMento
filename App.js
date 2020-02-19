@@ -1,5 +1,6 @@
 var express = require('express');
 var app = express();
+const port = process.env.PORT || 8080;
 
 app.get('/', function (req, res) {
   res.send('Hello World!');
@@ -21,7 +22,7 @@ request(options, function (error, response) {
 });
 });
 
-app.listen(process.env.PORT  || 3001, function () {
+app.listen(port, function () {
   console.log('Example app listening on port 3001!');
 });
 
