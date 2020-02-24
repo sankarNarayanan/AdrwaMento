@@ -12,7 +12,7 @@ app.get('/', function (req, res) {
 app.get('/getLinkedinUser', function(req,res){
     code = req.query.code;
     var request = require('request');
-    url = 'https://www.linkedin.com/oauth/v2/accessToken?grant_type=authorization_code&code='+code+'&redirect_uri=http://localhost:3000/linkedInRedirect&client_id=81y0p9iz2huzbk&client_secret=RYPYWae99eMjAaDR';
+    url = 'https://www.linkedin.com/oauth/v2/accessToken?grant_type=authorization_code&code='+code+'&redirect_uri=https://adrwamento.com/weblearning/linkedInRedirect/&client_id=81y0p9iz2huzbk&client_secret=RYPYWae99eMjAaDR';
     var options = {
     'method': 'POST',
     'url': url,
