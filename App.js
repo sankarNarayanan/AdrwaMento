@@ -31,6 +31,11 @@ request(options, function (error, response) {
 });
 });
 
+
+app.get('/authenticateUser', function(req, res){
+    res.send('{\"courseDetails\":{\"menu\":{\"book\":1}},\"useDetails\":{\"name\":\"\",\"profieImage\":\"\",\"appSetting\":{},\"account\":{}},\"auth\":{\"token\":\"\",\"refreshtoken\":\"\"}}');
+});
+
 app.listen(port, function () {
   console.log('Example app listening on port 3001!');
 });
