@@ -49,10 +49,10 @@ app.get('/getQuestions', function(req,res){
 
 
 app.get('/authenticateUser', function(req, res){
-    var requestObj = JSON.parse(req);
-    var name = responseObj.name;
-    var email = responseObj.email;
-    var password = responseObj.password;
+    // var requestObj = JSON.parse(req);
+    // var name = responseObj.name;
+    // var email = responseObj.email;
+    // var password = responseObj.password;
     res.send('{\"courseDetails\":{\"menu\":{\"book\":1}},\"useDetails\":{\"name\":\"\",\"profieImage\":\"\",\"appSetting\":{},\"account\":{}},\"auth\":{\"token\":\"\",\"refreshtoken\":\"\"}}');
 
 });
