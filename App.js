@@ -48,7 +48,7 @@ app.get('/getQuestions', function(req,res){
 });
 
 
-app.post('/authenticateUser', function(req, res){
+app.get('/authenticateUser', function(req, res){
     var requestObj = JSON.parse(req);
     var name = responseObj.name;
     var email = responseObj.email;
